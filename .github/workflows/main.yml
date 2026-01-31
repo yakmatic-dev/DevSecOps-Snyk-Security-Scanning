@@ -10,9 +10,15 @@ on:
 jobs:
   security:
     runs-on: ubuntu-latest
+    permissions:
+      # required for all workflows
+      security-events: write
+      # only required for workflows in private repositories
+      actions: read
+      contents: read
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       # - name: Run Snyk to check for vulnerabilities
       #   uses: snyk/actions/node@master
