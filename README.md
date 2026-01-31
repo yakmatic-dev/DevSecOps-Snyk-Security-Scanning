@@ -253,6 +253,7 @@ snyk monitor --project-name="My-App-Production"
 # Monitor with custom organization
 snyk monitor --org=my-org-name
 ```
+
 <img width="1679" height="212" alt="image" src="https://github.com/user-attachments/assets/8645c9ed-df12-4d70-a6f8-eae5ba9b5b30" />
 
 <img width="1919" height="879" alt="image" src="https://github.com/user-attachments/assets/6a07746e-9beb-4b0b-8264-6c3172660d30" />
