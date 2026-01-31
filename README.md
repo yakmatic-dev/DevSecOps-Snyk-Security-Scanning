@@ -239,6 +239,7 @@ snyk test --json > results.json
 <img width="1697" height="768" alt="image" src="https://github.com/user-attachments/assets/163e33a4-2b1a-4e13-921e-af1a6cd5c77c" />
 
 <img width="1661" height="798" alt="image" src="https://github.com/user-attachments/assets/99686907-d435-45f1-a1f8-3bce3f42a476" />
+
 **Monitor projects:**
 ```bash
 # Take snapshot and upload to Snyk for continuous monitoring
