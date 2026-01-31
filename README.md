@@ -293,6 +293,7 @@ snyk container monitor node:14-alpine
  snyk container monitor snykcontainertest:v1
 
 <img width="1919" height="943" alt="image" src="https://github.com/user-attachments/assets/322f8265-1703-4935-a788-18b79a1bf442" />
+
 **Scan Infrastructure as Code:**
 ```bash
 # Scan Terraform files
