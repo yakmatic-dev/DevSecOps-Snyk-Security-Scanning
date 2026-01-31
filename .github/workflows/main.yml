@@ -32,8 +32,16 @@ jobs:
         env:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
 
-      - name: Upload Snyk results to GitHub Code Scanning
-        uses: github/codeql-action/upload-sarif@v5
-        if: always()
+      # - name: Upload Snyk results to GitHub Code Scanning
+      #   uses: github/codeql-action/upload-sarif@v5
+      #   if: always()
+      #   with:
+      #     sarif_file: snyk.sarif
+      - name: Upload SARIF file
+        uses: github/codeql-action/upload-sarif@v4
         with:
-          sarif_file: snyk.sarif
+          # Path to SARIF file relative to the root of the repository
+          sarif_file: results.sarif
+          # Optional category for the results
+          # Used to differentiate multiple results for one commit
+          category: my-analysis-tool
