@@ -191,8 +191,6 @@ curl --compressed https://static.snyk.io/cli/latest/snyk-linux -o snyk
 chmod +x ./snyk
 mv ./snyk /usr/local/bin/
 
-<img width="1600" height="775" alt="image" src="https://github.com/user-attachments/assets/c3f8171a-d97f-4bf3-9bfd-5f5cc40999d6" />
-
 
 # macOS
 curl --compressed https://static.snyk.io/cli/latest/snyk-macos -o snyk
@@ -202,6 +200,7 @@ mv ./snyk /usr/local/bin/
 # Windows (PowerShell)
 Invoke-WebRequest -Uri https://static.snyk.io/cli/latest/snyk-win.exe -OutFile snyk.exe
 ```
+<img width="1600" height="775" alt="image" src="https://github.com/user-attachments/assets/c3f8171a-d97f-4bf3-9bfd-5f5cc40999d6" />
 
 #### Authentication
 
@@ -222,10 +221,6 @@ export SNYK_TOKEN=<YOUR_API_TOKEN>
 ```bash
 # Test current project
 snyk test
-<img width="1697" height="768" alt="image" src="https://github.com/user-attachments/assets/163e33a4-2b1a-4e13-921e-af1a6cd5c77c" />
-
-<img width="1661" height="798" alt="image" src="https://github.com/user-attachments/assets/99686907-d435-45f1-a1f8-3bce3f42a476" />
-
 
 # Test specific package manager
 snyk test --package-manager=npm
@@ -241,17 +236,13 @@ snyk test --severity-threshold=high
 # JSON output for automation
 snyk test --json > results.json
 ```
+<img width="1697" height="768" alt="image" src="https://github.com/user-attachments/assets/163e33a4-2b1a-4e13-921e-af1a6cd5c77c" />
 
+<img width="1661" height="798" alt="image" src="https://github.com/user-attachments/assets/99686907-d435-45f1-a1f8-3bce3f42a476" />
 **Monitor projects:**
 ```bash
 # Take snapshot and upload to Snyk for continuous monitoring
 snyk monitor
-
-<img width="1679" height="212" alt="image" src="https://github.com/user-attachments/assets/8645c9ed-df12-4d70-a6f8-eae5ba9b5b30" />
-
-<img width="1919" height="879" alt="image" src="https://github.com/user-attachments/assets/6a07746e-9beb-4b0b-8264-6c3172660d30" />
-
-<img width="1919" height="939" alt="image" src="https://github.com/user-attachments/assets/bad5ea84-dad0-4919-8169-d58468489b3d" />
 
 
 
@@ -262,6 +253,11 @@ snyk monitor --project-name="My-App-Production"
 # Monitor with custom organization
 snyk monitor --org=my-org-name
 ```
+<img width="1679" height="212" alt="image" src="https://github.com/user-attachments/assets/8645c9ed-df12-4d70-a6f8-eae5ba9b5b30" />
+
+<img width="1919" height="879" alt="image" src="https://github.com/user-attachments/assets/6a07746e-9beb-4b0b-8264-6c3172660d30" />
+
+<img width="1919" height="939" alt="image" src="https://github.com/user-attachments/assets/bad5ea84-dad0-4919-8169-d58468489b3d" />
 
 **Scan source code:**
 ```bash
@@ -282,14 +278,7 @@ snyk container test node:14-alpine
 snyk container test
 snyk container test snykcontainertest:v1
 
-
-<img width="1677" height="758" alt="image" src="https://github.com/user-attachments/assets/075d0d73-7b0e-4f71-bf52-615f98d1ca7f" />
-
- snyk container monitor snykcontainertest:v1
-
-<img width="1919" height="943" alt="image" src="https://github.com/user-attachments/assets/322f8265-1703-4935-a788-18b79a1bf442" />
-
-
+snyk container monitor snykcontainertest:v1
 
 # Scan with Dockerfile for better recommendations
 snyk container test node:14-alpine --file=Dockerfile
@@ -297,7 +286,11 @@ snyk container test node:14-alpine --file=Dockerfile
 # Monitor container in Snyk platform
 snyk container monitor node:14-alpine
 ```
+<img width="1677" height="758" alt="image" src="https://github.com/user-attachments/assets/075d0d73-7b0e-4f71-bf52-615f98d1ca7f" />
 
+ snyk container monitor snykcontainertest:v1
+
+<img width="1919" height="943" alt="image" src="https://github.com/user-attachments/assets/322f8265-1703-4935-a788-18b79a1bf442" />
 **Scan Infrastructure as Code:**
 ```bash
 # Scan Terraform files
