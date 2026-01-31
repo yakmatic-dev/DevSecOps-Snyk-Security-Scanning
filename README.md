@@ -21,7 +21,7 @@
 
 ## Executive Summary
 
-Snyk is an AI-powered developer security platform that enables organizations to find, prioritize, and fix security vulnerabilities across their entire software development lifecycle (SDLC). It integrates seamlessly into development workflows, providing real-time security feedback without disrupting developer productivity. It can be used to identify scan security vulnerability in third party libraries.
+Snyk is an AI-powered developer security platform that enables organizations to find, prioritize, and fix security vulnerabilities across their entire software development lifecycle (SDLC). It integrates seamlessly into development workflows, providing real-time security feedback without disrupting developer productivity. It can be used to identify scan security vulnerability in third party libraries. It is part of software composition analysis
 
 <img width="1600" height="779" alt="image" src="https://github.com/user-attachments/assets/a97d0bbb-12de-4c23-8d02-71f6359d1212" />
 
@@ -1507,8 +1507,6 @@ snyk test --json | jq .
 4. **GitHub Issues**: https://github.com/snyk/cli/issues
 5. **Status Page**: https://status.snyk.io
 
-**Contact Support:**
-yakubiliyas12@gmail.com
 
 ## Conclusion
 
@@ -1540,3 +1538,7 @@ Implementing Snyk in your DevSecOps pipeline provides comprehensive security cov
 **Document Version**: 1.0  
 **Last Updated**: January 31, 2026  
 **Author**: DevSecOps Engineer (Yakub Ilyas)  
+
+**Contact Support:**
+yakubiliyas12@gmail.com
+
